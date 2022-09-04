@@ -1,0 +1,131 @@
+html, body{
+    height: 106%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+
+
+body{
+    background-color: rgb(209,236,251);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    background-color: rgb(123,184,218);
+    filter: brightness(80%);
+    opacity: 0.8;
+    width: 100%;
+    height: 7%;
+    grid-area: h;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sub-bar{
+    display: none;
+    position: absolute;
+    left: 300px;
+    top: 60px;
+    
+
+}
+.icon{
+    position: absolute;
+    top: 6px;
+    left: 14px;
+
+}
+
+.nav-links ul{
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 150px);
+    margin-left: 150px;
+    margin-top: 10px;
+    list-style: none;
+    transition: 0.5s ease-in;
+
+    
+
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+ul a:hover{
+    color: burlywood;
+}
+
+#btn{
+
+    position: absolute;
+    left: 1370px;
+    top: 5px;/* Green */
+
+}
+
+#btn button{
+    background-color: lightblue; 
+    filter: brightness(90%);
+    border: none;
+    color: black;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.25s ease-in;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+#btn button:hover{
+    background-color:beige ;
+}
+
+.title h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 210px;
+}
+
+main{
+    background-color: rgb(210,200,220);
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 20% 26.666% 26.666% 26.666%;
+    grid-template-rows: 7% 31% 31% 31%;
+    grid-template-areas: 
+        "s n n n"
+        "s p p p"
+        "s p p p"
+        "s p p p"
+    
+    ;
+
+}
+
+sidebar{
+    grid-area: s;
+    border: 0.5px solid black;
+}
+navbar{
+    grid-area: n;
+    border: 0.2px solid black;
+}
+products{
+    grid-area: p;
+    border: 0.5px solid black;
+}
